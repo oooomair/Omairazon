@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/omairazon/static/css/main.a1fae85c.chunk.css",
+    "main.js": "/omairazon/static/js/main.5be92e07.chunk.js",
+    "main.js.map": "/omairazon/static/js/main.5be92e07.chunk.js.map",
+    "runtime-main.js": "/omairazon/static/js/runtime-main.917a3c03.js",
+    "runtime-main.js.map": "/omairazon/static/js/runtime-main.917a3c03.js.map",
+    "static/js/2.36513155.chunk.js": "/omairazon/static/js/2.36513155.chunk.js",
+    "static/js/2.36513155.chunk.js.map": "/omairazon/static/js/2.36513155.chunk.js.map",
+    "index.html": "/omairazon/index.html",
+    "static/css/main.a1fae85c.chunk.css.map": "/omairazon/static/css/main.a1fae85c.chunk.css.map",
+    "static/js/2.36513155.chunk.js.LICENSE.txt": "/omairazon/static/js/2.36513155.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.917a3c03.js",
+    "static/js/2.36513155.chunk.js",
+    "static/css/main.a1fae85c.chunk.css",
+    "static/js/main.5be92e07.chunk.js"
+  ]
+}
