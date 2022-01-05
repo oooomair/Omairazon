@@ -86,10 +86,11 @@ nav {
 
 .home {
   display: flex;
+  justify-content: center;
 }
 
 .options {
-  width: 15%;
+  width: 20%;
   display: flex;
   flex-flow: column nowrap;
   padding-top: 100px;
@@ -151,7 +152,7 @@ nav {
   background-color: transparent;
   height: 550px;
   perspective: 1000px;
-  min-width: 400px;
+  min-width: 300px;
   border: none;
   overflow: hidden;
 }
@@ -402,10 +403,43 @@ nav {
 
 /* media */
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1850px) {
+  .cards {
+    gap: 3rem 3rem;
+    padding: 40px;
+  }
+  .card {
+    height: 500px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1610px) {
+  .cards {
+    gap: 2rem 1rem;
+    padding: 40px;
+  }
+  .card {
+    height: 500px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .cards {
+    gap: 2rem 3rem;
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: 500px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1150px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 4rem;
     padding: 20px;
   }
   .dropdown {
@@ -434,14 +468,29 @@ nav {
   }
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 900px) {
+  .cards {
+    gap: 2rem 1rem;
+    padding: 20px;
+  }
+  .card {
+    height: 500px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 850px) {
   body {
     padding-top: 100px;
   }
   .cards {
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     padding: 20px;
+  }
+  .card {
+    height: 400px;
+    min-width: none;
   }
   .dropdown {
     display: flex;

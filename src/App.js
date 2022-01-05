@@ -1,6 +1,6 @@
 import './App.css'
 import { useEffect, useState } from 'react'
-import {Switch, Route} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
@@ -56,11 +56,11 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Switch>
-        <Route exact path='/'> <Home products={products} settingCategory={settingCategory} isLoading={isLoading} addToCart={addToCart} /> </Route>
-        <Route exact path='/cart'> <Cart addCart={addCart} prices={prices} clearCart={clearCart} deleteCartItem={deleteCartItem} deletePrice={deletePrice} /> </Route>
-        <Route exact path='/receipt'> <Receipt/> </Route>
-      </Switch>
+      <Routes>
+        <Route path='/' element={<Home products={products} settingCategory={settingCategory} isLoading={isLoading} addToCart={addToCart} />} />
+        <Route path='/cart' element={<Cart addCart={addCart} prices={prices} clearCart={clearCart} deleteCartItem={deleteCartItem} deletePrice={deletePrice} />} />
+        <Route path='/receipt' element={<Receipt/>} />
+      </Routes>
       <Footer/>
     </div>
   );
